@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/resume.css">
+    <link rel="stylesheet" type="text/css" href="./font/iconfont.css">
+    <title>林小强</title>
+</head>
+<body>
+<div class="page-wrapper clear-fix">
+
+    <aside>
+        <div class="headimg">
+            <img src="./img/me.JPG" alt="木有">
+        </div>
+        <a href="./resume.html" class="myname">林小强</a>
+        <div class="menu">
+           <i class="iconfont  icon-liebiao  hidden liebiao"></i>
+        </div>
+        <footer>
+            <ul class="nav">
+                <li><a href="./resume.html" class="selected">个人</a></li>
+                <li><a href="./work.html">作品</a></li>
+                <li><a href="./skill.html">技能</a></li>
+                <li><a href="./connect.html">联系</a></li>
+                <li><a href="http://wpa.qq.com/msgrd?v=3&uin=291364736&site=qq&menu=yes">QQ</a></li>
+            </ul>
+            <div id="footer">
+                <div class="logo">
+                    <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=291364736@qq.com" target="_blank" class="iconfont icon-email"></a>
+                    <a href="https://github.com/XQ-LoveRing" target="_blank" class="iconfont icon-git"></a>
+                </div>
+                <p class="source">
+                    Open source:<a href="https://github.com/XQ-LoveRing" target="_blank">GitHub</a>
+                    <br>
+                </p>
+            </div>
+        </footer>
+    </aside>
+
+    <div class="main">
+        <div class="maininner">
+            <div class="information">
+                <p class="title">个人信息</p>
+                <ul class="detail">
+                    <li><span class="q">出生日期：</span><span class="a">1996年3月</span></li>
+                    <li><span class="q">意向职位：</span><span class="a">Web前端工程师</span></li>
+                    <li><span class="q">教育经历：</span><span class="a">湖南工业大学 18届</span></li>
+                    <li><span class="q">学历专业：</span><span class="a">本科/网络工程</span></li>
+                    <li><span class="q">目标城市：</span><span class="a">深圳/广州等</span></li>
+                    <li><span class="q">联系电话：</span><span 0class="a">15096356793</span></li>
+
+                </ul>
+                <div class="about">
+                    我是一个幽默、做事认真，热爱运动的人。
+                    良好的沟通协作能力和服务意识，乐于助人。本着一个学到老活到老的心，乐于主动学习新的技术。
+                    具有时间观念，能在规定的时间内完成任务。热衷解决、分析程序中出现的问题。
+                    <br>
+                    我正在寻求一份web前端开发的工作。
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./lib/jquery-2.1.1.min.js"></script>
+<script>
+    $('.menu').on('click',function(){
+        $('aside').toggleClass('active');
+        $('.liebiao').toggleClass('icon-liebiao').toggleClass('icon-x');
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/work.css">
+    <link rel="stylesheet" type="text/css" href="./font/iconfont.css">
+    <title>林小强</title>
+</head>
+<body>
+<div class="page-wrapper clear-fix">
+
+    <aside>
+        <div class="headimg">
+            <img src="./img/me.JPG" alt="木有">
+        </div>
+        <a href="./resume.html" class="myname">林小强</a>
+        <div class="menu">
+            <i class="iconfont  icon-liebiao  hidden liebiao"></i>
+        </div>
+        <footer>
+            <ul class="nav">
+                <li><a href="./resume.html" >个人</a></li>
+                <li><a href="./work.html" class="selected">作品</a></li>
+                <li><a href="./skill.html">技能</a></li>
+                <li><a href="./connect.html">联系</a></li>
+                <li><a href="http://wpa.qq.com/msgrd?v=3&uin=291364736&site=qq&menu=yes">QQ</a></li>
+            </ul>
+            <div id="footer">
+                <div class="logo">
+                    <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=291364736@qq.com" target="_blank" class="iconfont icon-email"></a>
+                    <a href="https://github.com/XQ-LoveRing" target="_blank" class="iconfont icon-git"></a>
+                </div>
+                <p class="source">
+                    Open source:<a href="https://github.com/XQ-LoveRing" target="_blank">GitHub</a>
+                    <br>
+                </p>
+            </div>
+        </footer>
+    </aside>
+
+
+
+    <div class="main">
+        <div class="workwrapper">
+            <p class="project">项目</p>
+            <div class="project-items clear-fix">
+                <a href="https://xq-lovering.github.io/Demo/warriors-webpack/" class="project-item1">
+                    <img src="./img/warrios.png" alt="" class="item1-pic">
+                    <div class="item1-wrapper">
+                        <h2 class="item1-title">球队静态页面</h2>
+                        <p class="item1-p">JQuery封装三个组件，轮播，ajax获取新闻，滑动回到页首</p>
+                    </div>
+                </a>
+                <a href="https://LoveRing.coding.me/wearther" class="project-item2">
+                    <img src="./img/wearther.png" alt="" class="item2-pic">
+                    <div class="item2-wrapper">
+                        <h2 class="item2-title">天气预报</h2>
+                        <p class="item2-p">ES6Promise获取Ajax数据,移动端适用</p>
+                    </div>
+                </a>
+                <a href="https://xq-lovering.github.io/music-box/" class="project-item3">
+                    <img src="./img/music.png" alt="" class="item3-pic">
+                    <div class="item3-wrapper">
+                        <h2 class="item3-title">音乐播放器</h2>
+                        <p class="item3-p">支持切换频道，下一曲，暂停\播放，循环播放，随机播放，歌词随时间显示功能，主要运用技术：html，css3，jQuery等</p>
+                    </div>
+                </a>
+                <a href="#" class="project-item4">
+                    <img src="./img/dianping.png" alt="" class="item4-pic">
+                    <div class="item4-wrapper">
+                        <h2 class="item4-title">React 移动端商城</h2>
+                        <p class="item4-p">主要搭建依赖React,React-redux,React-router。koa模拟后台,fetch获取数据。(还在开发学习当中)</p>
+                    </div>
+                </a>
+                <a href="https://xq-lovering.github.io/Demo/resume" class="project-item5">
+                    <img src="./img/resume-d.png" alt="" class="item5-pic">
+                    <div class="item5-wrapper">
+                        <h2 class="item5-title">简历模板</h2>
+                        <p class="item5-p">纯HTML 与 CSS </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./lib/jquery-2.1.1.min.js"></script>
+<script>
+    $('.menu').on('click',function(){
+        $('aside').toggleClass('active');
+        $('.liebiao').toggleClass('icon-liebiao').toggleClass('icon-x');
+    })
+</script>
+</body>
+</html>

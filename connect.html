@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contect.css">
+    <link rel="stylesheet" type="text/css" href="./font/iconfont.css">
+    <title>林小强</title>
+</head>
+<body>
+<div class="page-wrapper clear-fix">
+
+    <aside>
+        <div class="headimg">
+            <img src="./img/me.JPG" alt="木有">
+        </div>
+        <a href="./resume.html" class="myname">林小强</a>
+        <div class="menu">
+            <i class="iconfont  icon-liebiao  hidden liebiao"></i>
+        </div>
+        <footer>
+            <ul class="nav">
+                <li><a href="./resume.html" >个人</a></li>
+                <li><a href="./work.html">作品</a></li>
+                <li><a href="./skill.html">技能</a></li>
+                <li><a href="./connect.html" class="selected">联系</a></li>
+                <li><a href="http://wpa.qq.com/msgrd?v=3&uin=291364736&site=qq&menu=yes">QQ</a></li>
+            </ul>
+            <div id="footer">
+                <div class="logo">
+                    <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=291364736@qq.com" target="_blank" class="iconfont icon-email"></a>
+                    <a href="https://github.com/XQ-LoveRing" target="_blank" class="iconfont icon-git"></a>
+                </div>
+                <p class="source">
+                    Open source:<a href="https://github.com/XQ-LoveRing" target="_blank">GitHub</a>
+                    <br>
+                </p>
+            </div>
+        </footer>
+    </aside>
+
+
+    <div class="main clear-fix">
+        <div class="maininner">
+            <div class="qr-code clear-fix">
+                <div class="wx">
+                    <img src="./img/weixin.JPG" alt="">
+                    <p>微信二维码</p>
+                </div>
+                <div class="qq">
+                    <img src="./img/qq.PNG" alt="">
+                    <p>QQ二维码</p>
+                </div>
+            </div>
+            <p>Send me an email</p>
+            <form id='myform' action="mailto:291364736@qq.com?subject=Job Opportunity" method="post" enctype="text/plain" novalidate="novalidate">
+                <p class="name">Your name:</p>
+                <input type="text" name="name" size="40" placeholder="Your English Name">
+                <p class="add">Your email:</p>
+                <input type="email" name="mail" size="40" placeholder="example@mail.com">
+                <p class="text">Your message:</p>
+                <textarea name="your-massage" id="message" cols="40" rows="10" placeholder="期待您的邮件"></textarea>
+                <input type="submit" value="SEND">
+                <input type="reset" value="RESET">
+            </form>
+        </div>
+    </div>
+</div>
+<script src="./lib/jquery-2.1.1.min.js"></script>
+<script>
+    $('.menu').on('click',function(){
+        $('aside').toggleClass('active');
+        $('.liebiao').toggleClass('icon-liebiao').toggleClass('icon-x');
+    })
+</script>
+</body>
+</html>
